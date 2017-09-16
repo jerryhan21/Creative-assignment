@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<style media="screen">
+			#header {
+				background-image: url('https://pearsonified.com/theme/neoclassical/wp-content/themes/neoclassical/headers/header_2.jpg');
+				background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+				color: black;
+        background-blend-mode:soft-light;
+			}
+
+			#header, #footer {
+				background-color: lightskyblue;
+				text-align: center;
+			}
+
+			#about {
+				background-color: lightgray;
+        text-shadow: 2px 2px #EEEEEE;
+        background-size: contain;
+			}
+
+			div {
+				padding: 20px;
+				/*background-color: green;*/
+			}
+
+			img {
+				width: 100%;
+			}
+      body {
+          background: url(http://www.millionglitters.com/background/pattern/background-pattern-015.jpg);
+          background-size: cover;                   /* <------ */
+          background-repeat:   no-repeat;
+          background-position: center center;
+      }
+      P {
+        font-style: italic;
+        background-color: skyblue;
+
+      }
+      li {
+        list-style-type: upper-roman;
+        font-style: italic;
+        text-shadow: 2px 2px #EEEEEE;
+
+
+      }
+			h1 {
+				font-size: 70px;
+				font-weight: 100;
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-weight: bold;
+			}
+
+			h2 {
+				font-size: 40px;
+        text-shadow: 2px 2px #EEEEEE;
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-weight: bold;
+        background-color: lightblue;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>JeongSuk's Portfolio</h1>
+			</div>
+			<div id="about">
+				<h2>About</h2>
+				<p>I am a student of BYU. I am from South Korea, not the north. My major is Computer Science.
+           I want to be good at it so I can get a decent job so I can support my current and future family. I am not a smart person but I am a hard worker. My IQ might be low but my spirit is strong. I am also good at sports like soccer and badminton.</p>
+			</div>
+			<div id="projects">
+				<h2>Projects</h2>
+				<ul>
+					<li><a href="http://18.221.59.79/HomeWork1.html">All you need is love button.</a></li>
+					<li><a href="http://18.221.59.79/lab-1-portfolio-jerryhan21/project2.html">Love Temples 1.</a></li>
+          <li><a href="http://18.221.59.79/lab-1-portfolio-jerryhan21/project1.html">Love Temples 2.</a></li>
+				</ul>
+			</div>
+			<div id="work">
+				<h2>Work Experience</h2>
+				<ul>
+					<li>Orovo</li>
+					<li>BYU ELC</li>
+					<li>Farming</li>
+
+				</ul>
+			</div>
+			<div id="links">
+				<h2>Links</h2>
+				<ul>
+					<li><a href="https://github.com/">Check out what you can do with Github.</a></li>
+
+				</ul>
+			</div>
+			<div id="references">
+				<h2>References</h2>
+				<ol>
+					<li>Reference 1</li>
+					<li>Reference 2</li>
+					<li>Reference 3</li>
+				</ol>
+        </div>
+      <div id="Basic DOM">
+        <h2>Basic DOM</h2>
+
+        <script type="text/javascript">var numitems=4;function add_list(event)
+    {var list=document.getElementById('t1')
+    var newitem=document.createElement('li')
+    var newtext=document.createTextNode('Love')
+    list.appendChild(newitem)
+    newitem.appendChild(newtext)}</script>
+    <style>button{background:pink color:#fff}</style>
+    <button type="button" onclick="add_list(event)">All you need is love</button>
+
+    <ul id="t1">
+    <li> Love </li>
+    <li> Love </li>
+    <li> Love </li>
+    </ul>
+
+			<div id="images">
+				<img src="https://photos.smugmug.com/Temples/Organized-by-Temple/Provo-LDS-Temple/i-DGSqZVg/0/62cf1525/L/Provo%20Temple%20Sunrise%20Walkway_7361205-Edit-L.jpg">
+			</div>
+			<div id="footer">
+				Copyright 2017
+			</div>
+		</div>
+
+	</body>
+</html>
+
