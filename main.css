@@ -1,0 +1,23 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.container_shadow {
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
+  background-color: #FFF;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.hpad-15 {
+  width: 100%;
+  height: 15px;
+}
+
+.selected_shadow {
+  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
