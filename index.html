@@ -1,0 +1,121 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner h-25">
+          <div class="carousel-item active">
+            <img class="d-block w-100 h-100" src="img/soccer_1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 h-100" src="img/soccer_2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 h-100" src="img/soccer_3.jpg" alt="Third slide">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container container_shadow">
+  <div class="hpad-15"></div>
+    <div class="row">
+      <div class="col-sm-12 center">
+        <h1>Choose a Team</h1>
+      </div>
+    </div>
+    <div class="hpad-15"></div>
+    <div class="row">
+      <div id="team_1" class="col-sm-3" onclick="getVideo1()">
+        <a href="#"><img class="w-100" src="img/team_1.jpg"></a>
+      </div>
+      <div id="team_2" class="col-sm-3" onclick="getVideo2()">
+        <a href="#"><img class="w-100" src="img/team_2.jpg"></a>
+      </div>
+      <div id="team_3" class="col-sm-3" onclick="getVideo3()">
+        <a href="#"><img class="w-100" src="img/team_3.jpg"></a>
+      </div>
+      <div id="team_4" class="col-sm-3" onclick="getVideo4()">
+        <a href="#"><img class="w-100" src="img/team_4.jpg"></a>
+      </div>
+    </div>
+  <div class="hpad-15"></div>
+    <div id="highlights" style="display: none;">
+      <div class="row">
+        <div class="col-sm-12 center">
+          <h1>Highlights</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="team_video" class="embed-responsive-item" src="https://www.youtube.com/embed/PHeMCdk_e2I" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+        <div class="hpad-15"></div>
+          <div class="hpad-15"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var video1 = 'https://www.youtube.com/embed/PHeMCdk_e2I';
+    var video2 = 'https://www.youtube.com/embed/wHFEeQ4XIuM';
+    var video3 = 'https://www.youtube.com/embed/Isv61RHAtgo';
+    var video4 = 'https://www.youtube.com/embed/RML0N0Dg7Ig';
+
+    function getVideo1() {
+      document.getElementById('team_video').src = video1;
+      document.querySelector("#team_1 > a > img").classList.add('selected_shadow');
+      document.querySelector("#team_2 > a > img").classList.remove('selected_shadow');
+      document.querySelector("#team_3 > a > img").classList.remove('selected_shadow');
+      document.querySelector("#team_4 > a > img").classList.remove('selected_shadow');
+      document.getElementById('highlights').style.display = "block";
+    }
+    function getVideo2() {
+      document.getElementById('team_video').src = video2;
+      document.querySelector("#team_1 > a > img").classList.remove('selected_shadow');
+      document.querySelector("#team_2 > a > img").classList.add('selected_shadow');
+      document.querySelector("#team_3 > a > img").classList.remove('selected_shadow');
+      document.querySelector("#team_4 > a > img").classList.remove('selected_shadow');
+      document.getElementById('highlights').style.display = "block";
+    }
+    function getVideo3() {
+      document.getElementById('team_video').src = video3;
+      document.querySelector("#team_1 > a > img").classList.remove('selected_shadow');
+      document.querySelector("#team_2 > a > img").classList.remove('selected_shadow');
+      document.querySelector("#team_3 > a > img").classList.add('selected_shadow');
+      document.querySelector("#team_4 > a > img").classList.remove('selected_shadow');
+      document.getElementById('highlights').style.display = "block";
+    }
+    function getVideo4() {
+      document.getElementById('team_video').src = video4;
+      document.querySelector("#team_1 > a > img").classList.remove('selected_shadow');
+      document.querySelector("#team_2 > a > img").classList.remove('selected_shadow');
+      document.querySelector("#team_3 > a > img").classList.remove('selected_shadow');
+      document.querySelector("#team_4 > a > img").classList.add('selected_shadow');
+      document.getElementById('highlights').style.display = "block";
+    }
+
+  </script>
+
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+                </body>
+</html>
